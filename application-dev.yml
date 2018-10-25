@@ -19,16 +19,15 @@ spring:
     password: guest
   redis:
     host: paascloud-db-redis
-    password: paascloud@redis
     port: 6379
     timeout: 0
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     filters: stat,wall
     druid:
-      initial-size: 50
-      min-idle: 50
-      max-active: 100
+      initial-size: 5
+      min-idle: 5
+      max-active: 5
       test-on-borrow: true
       time-between-eviction-runs-millis: 60000
       min-evictable-idle-time-millis: 300000
